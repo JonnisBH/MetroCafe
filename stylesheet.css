@@ -53,8 +53,14 @@ li a:hover {
     height: 100%;
 }
 #textBox {
+    color: rgb(132, 110, 90);
     background-color: whitesmoke;
     padding: 0.7em 0;
+    font-size: 30px;
+}
+
+#paragraf{
+    margin-left: 400px;
 }
 
 h1 { 
