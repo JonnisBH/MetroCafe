@@ -11,7 +11,44 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-#nav {
+/* Grid system */
+
+.gridContainer {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer"
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+
+}
+
+footer {
+    grid-area: footer;
+
+}
+
+@media (max-width: 600px) {
+    .container {
+      grid-template-areas:
+        "header"
+        "main"
+        "footer";
+      grid-template-columns: 1fr;
+      padding: 0 2em;
+    }
+  }
+
+/* end */
+
+#navBar {
     color: #ffffff;
     font-size: 23px;
     position: sticky;
@@ -24,7 +61,7 @@ li {
     margin-right: 30px;
 }
 
-#nav a {
+#navBar a {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
@@ -59,7 +96,7 @@ li a:hover {
     font-size: 30px;
 }
 
-#paragraf{
+#paragraph{
     margin-left: 400px;
 }
 
