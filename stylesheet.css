@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300;400&display=swap');
 
 body {
-    padding: 0px;
     margin: 0px;
-    background-color: whitesmoke;
     background-image: url("Bakgrunnsbilde.png");
     background-size: cover;
     background-position: center;
@@ -15,53 +13,57 @@ body {
 
 .gridContainer {
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-areas: 
-    "header header"
-    "main main"
-    "footer footer"
+    "header"
+    "main"
+    "footer";
 }
 
-header {
+.gridHeader {
     grid-area: header;
 }
 
-main {
+.gridMain {
     grid-area: main;
-
 }
 
-footer {
+.gridFooter {
     grid-area: footer;
-
 }
 
 @media (max-width: 600px) {
-    .container {
+    .gridContainer {
       grid-template-areas:
         "header"
         "main"
         "footer";
       grid-template-columns: 1fr;
-      padding: 0 2em;
     }
   }
 
 /* end */
 
-#navBar {
+.logo {
+    width: 15%;
+    height: auto;
+}
+
+/* Navigation Bar */
+
+.navBar {
     color: #ffffff;
     font-size: 23px;
     position: sticky;
     top: 0;
 }
-  
+
 li {
     display: inline;
-    float: middle;
     margin-right: 30px;
 }
 
-#navBar a {
+.navBar a {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
@@ -77,23 +79,10 @@ li a:hover {
     background-color: #6d5c4e;
 }
 
-#header {
-    width: 100%;
-    height: 400px;
-}
+/* end */
 
-#header center img {
-    height: 100%;
-}
-
-#header center {
-    height: 100%;
-}
 #textBox {
-    color: rgb(132, 110, 90);
     background-color: whitesmoke;
-    padding: 0.7em 0;
-    font-size: 30px;
 }
 
 #paragraph{
@@ -110,13 +99,9 @@ h1 {
 
 #blackBackground {
     background: #000000;
-    opacity: 55%;
+    opacity: 75%;
     width: 100vw;
     height: 100vh;
     position: fixed;
     z-index: -1;
-}
-
-#menuBar {
-    padding: 1em;
 }
