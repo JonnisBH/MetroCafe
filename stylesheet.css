@@ -59,13 +59,17 @@ li a:hover {
     font-size: 30px;
 }
 
-#bilde{
+
+
+#image{
     float: left;
     width: 400px;
+    margin-left: 50px;
+    border-radius: 12px;
 }
 
 #paragraf{
-    margin-left: 400px;
+    margin-left: 500px;
 }
 
 h1 { 
