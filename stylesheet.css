@@ -59,6 +59,11 @@ li a:hover {
     font-size: 30px;
 }
 
+#bilde{
+    float: left;
+    width: 400px;
+}
+
 #paragraf{
     margin-left: 400px;
 }
