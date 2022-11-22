@@ -32,7 +32,6 @@ header {
 header img{
     width: 15%;
     height: auto;
-
 }
 
 main {
@@ -91,6 +90,7 @@ nav ul li{
 
 /* end */
 
+/* Main content */
 .textBox {
     background-color: whitesmoke;
 }
@@ -98,10 +98,17 @@ nav ul li{
 h1 { 
     margin-top: 0;
 }
+
+/* end */
+
+/* Footer content */
+
 .bottomText {
     color: rgb(255, 255, 255);
     
 }
+
+/* end */
 
 #blackBackground {
     background: #000000;
