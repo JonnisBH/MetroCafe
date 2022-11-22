@@ -42,7 +42,7 @@ footer {
     grid-area: footer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 850px) {
     .gridContainer {
       grid-template-areas:
         "nav"
@@ -51,6 +51,11 @@ footer {
         "footer";
       grid-template-columns: 1fr;
     }
+    li a {
+        display: block;
+        padding: 8px;
+      }
+    
   }
 
 /* end */
@@ -59,40 +64,55 @@ footer {
 
 nav {
     grid-area: nav;
-    display: flex;
-    justify-content: center;
-    background-color: #000000;
-    padding: 20px;
-    position: sticky;
-    top: 0;
+    padding: 40px 60px;
 }
 
 a {
     color: white;
     text-decoration: none;
     font-size: larger;
-    padding: 10px;
+    margin: 15px;
+    padding: 8px 5px;
+}
+
+.button {
+    background-color: #5CDB95;
+    padding: 14px 25px;
+    border-radius: 5px;
+    color: #000000;
+}
+
+.active {
+    color: #5CDB95;
 }
 
 i {
-    padding-right: 5px;
+    padding-right: 6px;
 }
 
 nav ul{
     padding: 0;
     margin: 0;
-    overflow: hidden;
 }
 
 nav ul li{
     display: inline;
 }
 
+/* Code from https://www.geeksforgeeks.org/how-to-set-the-gap-between-text-and-underlining-using-css/, underline for navbar */
+nav ul li .active {
+    padding-bottom: value;
+    border-bottom-style: solid;
+}
+
+li a:hover {
+    color: rgb(179, 179, 179);
+  }
 /* end */
 
 /* Main content */
 .textBox {
-    background-color: whitesmoke;
+    background-color: #EEEEEE;
 }
 
 h1 { 
@@ -112,7 +132,7 @@ h1 {
 
 #blackBackground {
     background: #000000;
-    opacity: 75%;
+    opacity: 85%;
     width: 100vw;
     height: 100vh;
     position: fixed;
