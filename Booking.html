@@ -47,16 +47,15 @@
     </div>
 
     <div class="bookingForm">
-     <form action="#">
-         <h1 class="heading booking">ONLINE RESERVASJON</h1>
+      <h1 class="heading booking">ONLINE RESERVASJON</h1>
 
        <div class="reservasjonBoks">
-         <p>Navn:</p>
+         <p>Navnet ditt:</p>
          <input type="text" placeholder="Navn:">
        </div>
 
        <div class="reservasjonBoks">
-         <p>Telefon:</p>
+         <p>Telefonnummer:</p>
          <input type="text" placeholder="Tlf:">
         </div>
 
@@ -71,8 +70,8 @@
         </div>
 
         <div class="reservasjonBoks">
-        <p>Antall personer:</p>
-        <select name="velg" id="#">
+          <label for="personer">Antall personer:</label>
+          <select id="velg">
             <option value="1">1 person</option>
             <option value="2">2 personer</option>
             <option value="3">3 personer</option>
@@ -80,7 +79,9 @@
             <option value="5">5 personer</option>
            <option value="6">6 personer</option>
         </div>
-       </form>
+        <div class="reservasjonBoks">
+          <input type="submit">
+        </div>
    </div>
  </div>
   
