@@ -85,6 +85,7 @@ li a:hover {
     cursor: pointer;
     border-radius: 12px;
     align-items: left;
+    border: 2px solid black;
   }
 
   .button:hover {
