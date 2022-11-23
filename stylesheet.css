@@ -26,7 +26,13 @@ header {
     grid-area: header;
     margin: 50px 0;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+}
+
+header h1 {
+    color: #5CDB95;
+    font-size: medium;
 }
 
 header img{
@@ -40,6 +46,8 @@ main {
 
 footer {
     grid-area: footer;
+    display: grid;
+
 }
 
 @media (max-width: 850px) {
@@ -121,10 +129,6 @@ li a:hover {
     background-color: #EEEEEE;
 }
 
-h1 { 
-    margin-top: 0;
-}
-
 /* end */
 
 /* Footer content */
@@ -138,7 +142,7 @@ h1 {
 
 #blackBackground {
     background: #000000;
-    opacity: 85%;
+    opacity: 75%;
     width: 100vw;
     height: 100vh;
     position: fixed;
