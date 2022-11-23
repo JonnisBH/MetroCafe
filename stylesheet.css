@@ -52,10 +52,16 @@ footer {
       grid-template-columns: 1fr;
     }
     li a {
-        display: block;
-        padding: 8px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: px;
       }
-    
+
+      li a i {
+        padding: 13px;
+      }
   }
 
 /* end */
