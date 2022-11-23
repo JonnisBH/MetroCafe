@@ -90,3 +90,18 @@ h1 {
     padding: 0.7em 0;
     font-size: 30px;
 }
+
+#textBoxMeny{
+    color: rgb(0, 0, 0);
+    background-color: whitesmoke;
+    padding: 0.7em 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+#textBoxMeny2{
+    color: rgb(0, 0, 0);
+    background-color: whitesmoke;
+    padding: 0.7em 0;
+    font-size: 30px;
+}
