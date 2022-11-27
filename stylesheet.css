@@ -36,7 +36,7 @@ header h1 {
 }
 
 header img{
-    width: 300px;
+    width: 280px;
     height: auto;
 }
 
@@ -46,7 +46,7 @@ main {
 
 footer {
     grid-area: footer;
-    margin: 50px;
+    margin: 40px 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
@@ -126,10 +126,21 @@ li a:hover {
     font-size: larger;
 }
 
-/* Code from https://www.w3.org/Style/Examples/007/center.en.html#block , maintain image in center*/
-.footer-grid img {
-    max-width: 10vw;
+/*Logo and social media center*/
+
+.footer-social-section img {
+    max-width: 7vw;
     height: auto;
+}
+
+.footer-social-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-social-section a {
+    text-decoration: none;
 }
 
 .social-media-button button{
@@ -137,13 +148,12 @@ li a:hover {
     cursor: pointer;
     background: none;
     color: #5CDB95;
-    font-size: 30px;
-    margin-top: 5px;
+    font-size: 25px;
+    margin-top: 10px;
 }
 
-
-
 /* Background color opacity */
+
 #black-background {
     background: #000000;
     opacity: 85%;
