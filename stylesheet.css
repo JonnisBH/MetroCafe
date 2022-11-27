@@ -1,107 +1,200 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300;400&display=swap');
 
 body {
-    padding: 0px;
     margin: 0px;
-    background-color: whitesmoke;
-    background-image: url("Bakgrunnsbilde.png");
+    background-image: url("Bakgrunnsbilde.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-#nav {
-    color: #ffffff;
-    font-size: 23px;
-    position: sticky;
-    top: 0;
-}
-  
-li {
-    display: inline;
-    float: middle;
-    margin-right: 30px;
+/* Grid system */
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
 }
 
-#nav a {
-    color: rgb(255, 255, 255);
+header{
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column ;
+}
+
+header h1 {
+    color: #5CDB95;
+    font-size: medium;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    display: grid;
+
+}
+
+@media (max-width: 850px) {
+    .gridContainer {
+      grid-template-areas:
+        "nav"
+        "header"   
+        "main"
+        "footer";
+      grid-template-columns: 1fr;
+    }
+    li a {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: px;
+      }
+
+      li a i {
+        padding: 13px;
+      }
+  }
+
+/* end */
+
+/* Navigation Bar */
+
+nav {
+    grid-area: nav;
+    padding: 40px 60px;
+}
+
+a {
+    color: white;
     text-decoration: none;
+    font-size: larger;
+    margin: 15px;
+    padding: 8px 5px;
 }
 
-ul {
-    background-color: #816e5d   ;
-    padding: 0.8em;
-    margin: 0em;
-    overflow: hidden;
+.button {
+    background-color: #5CDB95;
+    padding: 14px 25px;
+    border-radius: 5px;
+    color: #000000;
 }
+
+.active {
+    color: #5CDB95;
+}
+
+i {
+    padding-right: 6px;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline;
+}
+
+/* Code from https://www.geeksforgeeks.org/how-to-set-the-gap-between-text-and-underlining-using-css/, underline for navbar */
+nav ul li .active {
+    padding-bottom: value;
+    border-bottom-style: solid;
+}
+
 li a:hover {
-    padding: 20px 13px;
-    background-color: #6d5c4e;
+    color: rgb(179, 179, 179);
+  }
+/* end */
+
+/* Main content */
+.textBox {
+    background-color: #EEEEEE;
 }
 
-#header {
-    width: 100%;
-    height: 400px;
+.tittel {
+    font-size: 25px;
+    text-align: center;
+}
+.line-Menu{
+    width: 180px;
+    height: 3px;
+    background: #5CDB95;
 }
 
-#header center img {
-    height: 100%;
+.meny-tittler{
+    font-size: 25px;
 }
 
-#header center {
-    height: 100%;
-}
-#textBox {
-    color: rgb(132, 110, 90);
-    background-color: whitesmoke;
-    padding: 0.7em 0;
-    font-size: 30px;
+.menu{
+    width: 1150px;
+    margin: 100px auto;
 }
 
-#paragraf{
-    margin-left: 400px;
+
+.single-menu{
+    border-radius: 30px;
+    margin: 1.5rem 0;
+    box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.75);
 }
 
-h1 { 
-    margin-top: 0;
+img{
+    width: 235px;
+    float: left;
+    margin: 0 30px 0 0;
+    box-shadow: 0 0 10px grey;
+    border-radius: 30px;
 }
-#bottomText {
+
+.food-content{
+    padding: 1rem;
+}
+
+.line{
+    width: 100px;
+    height: 3px;
+    background: #5CDB95;
+    float: left;
+    
+}
+.food-price{
+    padding: 0.4rem 0;
+    font-weight: 600;
+    font-size: 1.4rem;
+    opacity: 0.8;
+}
+
+
+
+
+
+/* end */
+
+/* Footer content */
+
+.bottomText {
     color: rgb(255, 255, 255);
     
 }
 
+/* end */
+
 #blackBackground {
     background: #000000;
-    opacity: 55%;
+    opacity: 75%;
     width: 100vw;
     height: 100vh;
     position: fixed;
     z-index: -1;
-}
-
-#menuBar {
-    padding: 1em;
-}
-
-#textBoxAccessability{
-    color: rgb(0, 0, 0);
-    background-color: whitesmoke;
-    padding: 0.7em 0;
-    font-size: 30px;
-}
-
-#textBoxMeny{
-    color: rgb(0, 0, 0);
-    background-color: whitesmoke;
-    padding: 0.7em 0;
-    font-size: 25px;
-    text-align: center;
-}
-
-#textBoxMeny2{
-    color: rgb(0, 0, 0);
-    background-color: whitesmoke;
-    padding: 0.7em 0;
-    font-size: 30px;
 }
