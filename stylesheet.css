@@ -11,7 +11,7 @@ body {
 
 /* Grid system */
 
-.gridContainer {
+.grid-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -32,11 +32,11 @@ header {
 
 header h1 {
     color: #5CDB95;
-    font-size: medium;
+    font-size: large;
 }
 
 header img{
-    width: 15%;
+    width: 300px;
     height: auto;
 }
 
@@ -46,42 +46,29 @@ main {
 
 footer {
     grid-area: footer;
+    margin: 50px;
     display: grid;
-
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 20px;
 }
 
-@media (max-width: 850px) {
-    .gridContainer {
-      grid-template-areas:
-        "nav"
-        "header"   
-        "main"
-        "footer";
-      grid-template-columns: 1fr;
-    }
+@media (max-width: 855px) {
     li a {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: px;
-      }
-
-      li a i {
-        padding: 13px;
+        display: block;
+        margin: auto;
       }
   }
-
-/* end */
 
 /* Navigation Bar */
 
 nav {
     grid-area: nav;
     padding: 40px 60px;
+    margin: auto;
 }
 
-a {
+nav a {
     color: white;
     text-decoration: none;
     font-size: larger;
@@ -113,7 +100,6 @@ nav ul li{
     display: inline;
 }
 
-/* Code from https://www.geeksforgeeks.org/how-to-set-the-gap-between-text-and-underlining-using-css/, underline for navbar */
 nav ul li .active {
     padding-bottom: value;
     border-bottom-style: solid;
@@ -122,27 +108,45 @@ nav ul li .active {
 li a:hover {
     color: rgb(179, 179, 179);
   }
-/* end */
 
 /* Main content */
-.textBox {
+
+.text-box {
     background-color: #EEEEEE;
 }
 
-/* end */
-
 /* Footer content */
 
-.bottomText {
-    color: rgb(255, 255, 255);
-    
+.footer-grid {
+    color: white;
 }
 
-/* end */
+.footer-grid h2 {
+    color:#5CDB95;
+    font-size: larger;
+}
 
-#blackBackground {
+/* Code from https://www.w3.org/Style/Examples/007/center.en.html#block , maintain image in center*/
+.footer-grid img {
+    max-width: 10vw;
+    height: auto;
+}
+
+.social-media-button button{
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: #5CDB95;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+
+
+/* Background color opacity */
+#black-background {
     background: #000000;
-    opacity: 75%;
+    opacity: 85%;
     width: 100vw;
     height: 100vh;
     position: fixed;
