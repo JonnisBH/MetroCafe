@@ -2,7 +2,7 @@
 
 body {
     margin: 0px;
-    background-image: url("Bakgrunnsbilde.jpeg");
+    background-image: url("Bakgrunnsbilde.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -11,7 +11,7 @@ body {
 
 /* Grid system */
 
-.gridContainer {
+.grid-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -22,7 +22,8 @@ body {
     "footer";
 }
 
-header{
+header {
+    grid-area: header;
     margin: 50px 0;
     display: flex;
     align-items: center;
@@ -31,7 +32,12 @@ header{
 
 header h1 {
     color: #5CDB95;
-    font-size: medium;
+    font-size: large;
+}
+
+header img{
+    width: 280px;
+    height: auto;
 }
 
 main {
@@ -40,42 +46,29 @@ main {
 
 footer {
     grid-area: footer;
+    margin: 40px 50px;
     display: grid;
-
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 20px;
 }
 
-@media (max-width: 850px) {
-    .gridContainer {
-      grid-template-areas:
-        "nav"
-        "header"   
-        "main"
-        "footer";
-      grid-template-columns: 1fr;
-    }
+@media (max-width: 855px) {
     li a {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: px;
-      }
-
-      li a i {
-        padding: 13px;
+        display: block;
+        margin: auto;
       }
   }
-
-/* end */
 
 /* Navigation Bar */
 
 nav {
     grid-area: nav;
     padding: 40px 60px;
+    margin: auto;
 }
 
-a {
+nav a {
     color: white;
     text-decoration: none;
     font-size: larger;
@@ -107,7 +100,6 @@ nav ul li{
     display: inline;
 }
 
-/* Code from https://www.geeksforgeeks.org/how-to-set-the-gap-between-text-and-underlining-using-css/, underline for navbar */
 nav ul li .active {
     padding-bottom: value;
     border-bottom-style: solid;
@@ -116,6 +108,7 @@ nav ul li .active {
 li a:hover {
     color: rgb(179, 179, 179);
   }
+
 /* end */
 
 /* Main content */
@@ -146,16 +139,18 @@ li a:hover {
 .single-menu{
     border-radius: 30px;
     margin: 1.5rem 0;
-    box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.75);
+    
 }
 
-img{
+.menu-img{
     width: 235px;
     float: left;
     margin: 0 30px 0 0;
     box-shadow: 0 0 10px grey;
     border-radius: 30px;
 }
+
+
 
 .food-content{
     padding: 1rem;
@@ -183,16 +178,46 @@ img{
 
 /* Footer content */
 
-.bottomText {
-    color: rgb(255, 255, 255);
-    
+.footer-grid {
+    color: white;
 }
 
-/* end */
+.footer-grid h2 {
+    color:#5CDB95;
+    font-size: larger;
+}
 
-#blackBackground {
+/*Logo and social media center*/
+
+.footer-social-section img {
+    max-width: 7vw;
+    height: auto;
+}
+
+.footer-social-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-social-section a {
+    text-decoration: none;
+}
+
+.social-media-button button{
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: #5CDB95;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+/* Background color opacity */
+
+#black-background {
     background: #000000;
-    opacity: 75%;
+    opacity: 85%;
     width: 100vw;
     height: 100vh;
     position: fixed;
