@@ -109,6 +109,7 @@ li a:hover {
     color: rgb(179, 179, 179);
   }
 
+
 /* end */
 
 /* Main content */
@@ -121,9 +122,12 @@ li a:hover {
     text-align: center;
 }
 .line-Menu{
-    width: 180px;
+    display: flex;
+    width: 100px;
     height: 3px;
     background: #5CDB95;
+    align-items: center;
+    justify-content: center;
 }
 
 .meny-tittler{
@@ -131,47 +135,35 @@ li a:hover {
 }
 
 .menu{
-    width: 1150px;
+    width: 1100px;
     margin: 100px auto;
-}
-
-
-.single-menu{
-    border-radius: 30px;
-    margin: 1.5rem 0;
-    
 }
 
 .menu-img{
     width: 235px;
     float: left;
     margin: 0 30px 0 0;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 5px grey;
     border-radius: 30px;
 }
 
-
-
 .food-content{
     padding: 1rem;
+    margin: 1rem 0;
 }
 
 .line{
-    width: 100px;
+    width: 250px;
     height: 3px;
     background: #5CDB95;
     float: left;
     
 }
 .food-price{
-    padding: 0.4rem 0;
-    font-weight: 600;
+    padding: 0.rem 0;
     font-size: 1.4rem;
-    opacity: 0.8;
+    
 }
-
-
-
 
 
 /* end */
