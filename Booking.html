@@ -5,43 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <title>Booking</title>
-
-    <script src="https://kit.fontawesome.com/c0242b9f6f.js" crossorigin="anonymous"></script>
-
+    <!-- Code from https://fontawesome.com/, icon kit implemented-->
+    <script src="https://kit.fontawesome.com/502616333a.js" crossorigin="anonymous"></script>
+    <title>MetroCafe</title>
 </head>
+
 <body>
-
-  
-  <div id="blackBackground">
-
-  </div>
-  
-  <div id="header">
-  
-    <center>
-        <img src="Logo til metro cafe.png" alt="Cafe logo">  
-    </center>
-    
-  </div>
-
-    <div id="nav">
-     <center> 
-       <ul>
-         <li><a href="index.html">HOME</a></li>
-         <li><a href="Meny.html">MENY</a></li>
-         <li><a href="Booking.html">BOOKING</a></li>
-         <li><a href="Accessability.html">ACCESSABILITY</a></li>
-         <li><a href="Topical.html">TOPICAL</a></li>
-       </ul>
-    </center>
+  <div class="grid-container">
+    <div id="black-background">
     </div>
 
- <div id="textBox">
+    <header>
+      <img src="Logo til metro cafe.png" alt="A steaming hot cup of coffee logo with Metro cafe text">
+      <h1>
+        A location for multipurpose arrangements
+      </h1>
+    </header>
+    
+    <!--Implementing icon in navigation bar-->
+    <nav> 
+      <ul>
+        <li><a href="index.html"><i class="fa fa-fw fa-home fa-sm"></i>HOME</a></li>
+        <li><a href="Meny.html"><i class="fa-solid fa-pizza-slice fa-sm"></i>MENU</a></li>
+        <li><a class="active" href="Booking.html"><i class="fa-solid fa-calendar-days fa-sm"></i>BOOKING</a></li>
+        <li><a href="Accessability.html"><i class="fa-solid fa-eye fa-sm"></i>ACCESSABILITY</a></li>
+        <li><a class="button" href="Topical.html"><i class="fa fa-fw fa-code fa-sm"></i>TOPICAL</a></li>
+      </ul>
+    </nav>
+
+
+ <main>
+    <div id="textBox">
   
 
-  <div class="containerBooking">
-    <div class="containerAbout">
+  <div class="container-booking">
+    <div class="container-about">
       <h1>Metro Café</h1>
 
       <hr>
@@ -62,38 +60,38 @@
         </p>
     </div>
 
-    <div class="bookingForm">
+    <div class="booking-form">
       <h1 class="heading booking">ONLINE RESERVATION</h1>
       
-       <div class="reservationBox">
+       <div class="reservation-box">
          <p>
           Your Name:
         </p>
          <input type="text" placeholder="Name:">
        </div>
 
-       <div class="reservationBox">
+       <div class="reservation-box">
          <p>
           Phonenumber:
         </p>
          <input type="text" placeholder="Phone:">
         </div>
 
-        <div class="reservationBox">
+        <div class="reservation-box">
           <p>
             Date:
           </p>
          <input type="date" placeholder="Date:">
         </div>
 
-        <div class="reservationBox">
+        <div class="reservation-box">
           <p>
           Point of time:
         </p>
          <input type="time">
         </div>
 
-        <div class="reservationBox">
+        <div class="reservation-box">
           <p>
             Number of persons:
           </p>
@@ -106,29 +104,48 @@
            <option value="6">6 persons</option>
         </div>
 
-        <div class="reservationBox">
+        <div class="reservation-box">
           <input type="submit" input value="Submit">
         </div>
    </div>
  </div>
-  
+</main>
+ <footer>
+  <div class="footer-social-section">
+    <img src="Logo til metro cafe.png" alt="A steaming hot cup of coffee logo with Metro cafe text">
+    <div class="social-media-button">
+      <a href="https://github.com/JonnisBH">
+        <button><i class="fa-brands fa-github"></i></button>
+      </a>
+      <a href="https://www.instagram.com/jonasbhaug/">
+        <button><i class="fa-brands fa-instagram"></i></button>
+      </a>
+      <a href="https://www.linkedin.com/in/jonas-haugvaldstad-8b01a0252/">
+        <button><i class="fa-brands fa-linkedin"></i></button>
+      </a>
+      <a href="https://www.youtube.com/@aleksanderheggelund3052">
+        <button><i class="fa-brands fa-youtube"></i></button>
+      </a>
+    </div>
+  </div>
+  <div class="footer-grid">
+      <h2>OPENING TIME</h2> 
+      <p>Monday - Friday 10:00 - 17:00</p>
+      <p>Saturday 11:00 - 17:00</p>
+      <p>Sunday closed</p>
+  </div>
+  <div class="footer-grid">
+      <h2>METRO CAFE</h2>
+      <p>Ellen Gleditschs hus, Pilestredet 35</p>
+      <p>0166 Oslo</p>
+      <p>CEO Jonas Haugvaldstad</p>
+      <p>Phone number: +47 90 18 92 16</p>
+  </div>
+  <div class="footer-grid">
 
-
-  <center id="bottomText">
-      <h4>Åpningstider:</h4> 
-      <p>Mandag - Fredag 10:00 - 17:00</p>
-      <p>Lørdag 11:00 - 17:00</p>
-      <p>Søndag stengt</p>
-
-    <br>
-
-      <h4>Metro Café</h4>
-      <p>Skomværsgata 2</p>
-      <p>3921 Porsgrunn</p>
-      <p>Daglig leder Aleksander Heggelund</p>
-      <p>Telefon: +47 92 66 17 00</p>
-  </center>
-
+  </div>
+</footer>
+</div>
 
 </body>
 </html>
