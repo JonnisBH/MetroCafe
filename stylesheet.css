@@ -42,6 +42,7 @@ header img{
 
 main {
     grid-area: main;
+    background-color: whitesmoke;
 }
 
 footer {
@@ -111,10 +112,6 @@ li a:hover {
 
 /* Main content */
 
-.text-box {
-    background-color: #EEEEEE;
-}
-
 /* Footer content */
 
 .footer-grid {
@@ -124,6 +121,11 @@ li a:hover {
 .footer-grid h2 {
     color:#5CDB95;
     font-size: larger;
+}
+
+.footer-grid a {
+    text-decoration: none;
+    color: white;
 }
 
 /*Logo and social media center*/
