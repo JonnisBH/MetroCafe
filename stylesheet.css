@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300;400&display=swap');
 
 body {
-    padding: 0px;
     margin: 0px;
-    background-color: whitesmoke;
     background-image: url("Bakgrunnsbilde.png");
     background-size: cover;
     background-position: center;
@@ -11,135 +9,195 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-#nav {
-    color: #ffffff;
-    font-size: 23px;
-    position: sticky;
-    top: 0;
-}
-  
-li {
-    display: inline;
-    float: middle;
-    margin-right: 30px;
+/* Grid system */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
 }
 
-#nav a {
-    color: rgb(255, 255, 255);
+header {
+    grid-area: header;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column ;
+}
+
+header h1 {
+    color: #5CDB95;
+    font-size: large;
+}
+
+header img{
+    width: 280px;
+    height: auto;
+}
+
+main {
+    grid-area: main;
+    background-color: white;
+}
+
+footer {
+    grid-area: footer;
+    margin: 40px 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+}
+
+@media (max-width: 855px) {
+    li a {
+        display: block;
+        margin: auto;
+      }
+  }
+
+/* Navigation Bar */
+
+nav {
+    grid-area: nav;
+    padding: 40px 60px;
+    margin: auto;
+}
+
+nav a {
+    color: white;
     text-decoration: none;
+    font-size: larger;
+    margin: 15px;
+    padding: 8px 5px;
 }
 
-ul {
-    background-color: #816e5d   ;
-    padding: 0.8em;
-    margin: 0em;
-    overflow: hidden;
+.button {
+    background-color: #5CDB95;
+    padding: 14px 25px;
+    border-radius: 5px;
+    color: #000000;
 }
+
+.active {
+    color: #5CDB95;
+}
+
+i {
+    padding-right: 6px;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li .active {
+    padding-bottom: value;
+    border-bottom-style: solid;
+}
+
 li a:hover {
-    padding: 20px 13px;
-    background-color: #6d5c4e;
-}
+    color: rgb(179, 179, 179);
+  }
 
-#header {
-    width: 100%;
-    height: 400px;
-}
+/* Main content */
 
-#header center img {
-    height: 100%;
-}
-
-#header center {
-    height: 100%;
-}
-#textBox {
-    color: green;
-    background-color: black;
-    padding: 0.7em 0;
-    font-size: 30px;
+.text-box {
+    
+    background-color: #ffffff;;
     height: auto;
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-#home{
-    position: relative;
-    display: flex;
-    flex-direction: row; 
-    
-}
-
-#picture{
-    position: relative;
-    width: 500px;
-    height: 330px; 
-    left: 50px;
-}
-
-#picture > img {
-    width: 600px;
-    height: 400px;
-    border-radius: 12px;
-}
-
-#text{
-    width: 50% ;
-    position: absolute;
-    right: 100px;
-    top: 50px;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-}
-
-#meny{
+#about-us{
     position: relative;
     display: flex;
     flex-direction: row;
-    margin-top: 150px;
 }
 
-#text2{
-    width: 50% ;
-    position: absolute;
-    right: 100px;
-    top: 50px;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-}
-
-#picture2{
+#picture-coffe{
     position: relative;
     width: 500px;
     height: 330px; 
     left: 50px;
-
+    margin-top: 40px;
 }
 
-#picture2 > img {
+#picture-coffe > img {
     width: 600px;
     height: 400px;
     border-radius: 12px;
-} 
-
-
-
-#bottomText {
-    color: rgb(255, 255, 255);
-    
 }
 
-#blackBackground {
+#text-about-us{
+    width: 50% ;
+    position: absolute;
+    right: 100px;
+    top: 200px;
+    background-color: #EEEEEE;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 25px;
+}
+
+
+
+/* Footer content */
+
+.footer-grid {
+    color: white;
+}
+
+.footer-grid h2 {
+    color:#5CDB95;
+    font-size: larger;
+}
+
+/*Logo and social media center*/
+
+.footer-social-section img {
+    max-width: 7vw;
+    height: auto;
+}
+
+.footer-social-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-social-section a {
+    text-decoration: none;
+}
+
+.social-media-button button{
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: #5CDB95;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+/* Background color opacity */
+
+#black-background {
     background: #000000;
-    opacity: 55%;
+    opacity: 85%;
     width: 100vw;
     height: 100vh;
     position: fixed;
     z-index: -1;
-}
-
-#menuBar {
-    padding: 1em;
 }

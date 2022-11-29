@@ -5,66 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <title>documents</title>
-
-    <script src="https://kit.fontawesome.com/c0242b9f6f.js" crossorigin="anonymous"></script>
-
+    <!-- Code from https://fontawesome.com/, icon kit implemented-->
+    <script src="https://kit.fontawesome.com/502616333a.js" crossorigin="anonymous"></script>
+    <title>MetroCafe</title>
 </head>
+
 <body>
-  <div id="blackBackground">
-  </div>
   
-  <div id="header">
-  
-    <center>
-        <img src="Logo til metro cafe.png" alt="Cafe logo">  
-    </center>
+  <div class="grid-container">
+    <div id="black-background">
+    </div>
+
+    <header>
+      <img src="Logo til metro cafe.png" alt="A steaming hot cup of coffee logo with Metro cafe text">
+      <h1>
+        A location for multipurpose arrangements
+      </h1>
+    </header>
     
-  </div>
+    <!--Implementing icon in navigation bar-->
+    <nav> 
+      <ul>
+        <li><a class="active" href="index.html"><i class="fa fa-fw fa-home fa-sm"></i>HOME</a></li>
+        <li><a href="Meny.html"><i class="fa-solid fa-pizza-slice fa-sm"></i>MENU</a></li>
+        <li><a href="Booking.html"><i class="fa-solid fa-calendar-days fa-sm"></i>BOOKING</a></li>
+        <li><a href="Accessability.html"><i class="fa-solid fa-eye fa-sm"></i>ACCESSABILITY</a></li>
+        <li><a class="button" href="Topical.html"><i class="fa fa-fw fa-code fa-sm"></i>TOPICAL</a></li>
+      </ul>
+    </nav>
 
-  <div id="nav">
-     <center> 
-       <ul>
-         <li><a href="index.html">HOME</a></li>
-         <li><a href="Meny.html">MENY</a></li>
-         <li><a href="Booking.html">BOOKING</a></li>
-         <li><a href="Accessability.html">ACCESSABILITY</a></li>
-         <li><a href="Topical.html">TOPICAL</a></li>
-       </ul>
-    </center>
-  </div>
+<main>    
+      
+          <div id="about-us">
+            <div id="picture-coffe"><img src="kaffe.avif" alt=""></div>
+              <div id="text-about-us">
+                <p>Metro Cafe ligger på idylliske Christiania Torv og restauranten har en intim og hyggelig atmosfære, med peis som varmer opp kalde dager. Om sommeren har vi stor uteservering i historiske omgivelser. Velkommen til oss for deilig skandinavisk mat og god service! </p>
+              </div>
+            </div>
+        </div>
+  
+</main>    
 
 
-  <div id="textBox">
-    <div id="home">
-      <div id="picture"> <img src="kaffe.avif" alt=""></div>
-      <div id="text">
-        <p>Cafe Skansen ligger på idylliske Christiania Torv og restauranten har en intim og hyggelig atmosfære, med peis som varmer opp kalde dager. Om sommeren har vi stor uteservering i historiske omgivelser. Velkommen til oss for deilig skandinavisk mat og god service! </p>
+    
+    <footer>
+      <div class="footer-social-section">
+        <img src="Logo til metro cafe.png" alt="A steaming hot cup of coffee logo with Metro cafe text">
+        <div class="social-media-button">
+          <a href="https://github.com/JonnisBH">
+            <button><i class="fa-brands fa-github"></i></button>
+          </a>
+          <a href="https://www.instagram.com/jonasbhaug/">
+            <button><i class="fa-brands fa-instagram"></i></button>
+          </a>
+          <a href="https://www.linkedin.com/in/jonas-haugvaldstad-8b01a0252/">
+            <button><i class="fa-brands fa-linkedin"></i></button>
+          </a>
+          <a href="https://www.youtube.com/@aleksanderheggelund3052">
+            <button><i class="fa-brands fa-youtube"></i></button>
+          </a>
+        </div>
       </div>
-    </div>
-    
-    <div id="meny">
-      <div id="picture2"> <img src="kaffe.avif" alt=""></div>
-      <div id="text2"><p>Menyen vår er basert på moderne skandinavisk mat, og vi strekker oss langt for å bruke lokale og kortreiste varer. Under lunsjen er det fokus på smørbrød og enklere retter, og på kveldstid serveres det rause porsjoner med deilige retter som vår klassiske oksetartar, østers fra Lerøy og villkveite. Vi ønsker alltid å gi våre gjester et godt måltid i hyggelige lokaler, uansett anledning. </p></div>
+      <div class="footer-grid">
+          <h2>OPENING TIME</h2> 
+          <p>Monday - Friday 10:00 - 17:00</p>
+          <p>Saturday 11:00 - 17:00</p>
+          <p>Sunday closed</p>
+      </div>
+      <div class="footer-grid">
+          <h2>METRO CAFE</h2>
+          <p>Ellen Gleditschs hus, Pilestredet 35</p>
+          <p>0166 Oslo</p>
+          <p>CEO Jonas Haugvaldstad</p>
+          <p>Phone number: +47 90 18 92 16</p>
+      </div>
+      <div class="footer-grid">
 
-    </div>
-     
-  </div>
+      </div>
+    </footer>
 
-  <center id="bottomText">
-      <h4>Åpningstider:</h4> 
-      <p>Mandag - Fredag 10:00 - 17:00</p>
-      <p>Lørdag 11:00 - 17:00</p>
-      <p>Søndag stengt</p>
-
-    <br>
-
-      <h4>Metro Café</h4>
-      <p>Skomværsgata 2</p>
-      <p>3921 Porsgrunn</p>
-      <p>Daglig leder Aleksander Heggelund</p>
-      <p>Telefon: +47 92 66 17 00</p>
-  </center>
-  
 </body>
 </html>
