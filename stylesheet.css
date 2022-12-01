@@ -121,7 +121,7 @@ li a:hover {
     flex-direction: column;
 }
 
-.messi{
+.content{
     display: flex;
     flex-direction: row;
 
@@ -222,8 +222,12 @@ a{
 }
 
 @media (max-width: 855px) {
-    .messi {
+    .content {
         flex-direction: column;
+    }
+
+    img{
+        width: 250px;
     }
 }
 /* Footer content */
