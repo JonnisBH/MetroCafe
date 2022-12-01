@@ -153,7 +153,6 @@ h1 {
 }
 
 .container-booking {
-    color: #000000;
     background-color: whitesmoke;
     padding: 40px;
     display: grid;
@@ -169,8 +168,8 @@ h1 {
     color: white;
 }
 
-.heading-booking {
-    text-align: center;
+.heading-booking{
+    font-size: 40px;
 }
 
 .container-about {
