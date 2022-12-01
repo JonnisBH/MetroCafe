@@ -134,9 +134,11 @@ li a:hover {
 
 .menu-container{
     display: grid;
-    padding: 2em;
-    grid-gap:3em;
+    padding: 1em;
+    grid-gap: 5em;
     grid-template-columns: 300px 300px 300px 300px;
+    
+    
 }
 
 @media (max-width: 855px) {
@@ -175,6 +177,41 @@ li a:hover {
 }
 /* End of the menu content */
 
+
+/* Start of the accessability page */
+
+.accessability-container{
+    display: grid;
+    padding: 2em;
+    grid-gap:3em;
+    grid-template-columns: 50% 50%;
+}
+.accessability-title{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    font-size: 30px;
+    text-align: center;
+}
+.accessability-title h3{
+    font-size: 20px;
+    text-align: center;
+}
+
+.accessability-text h2{
+    text-align: center;
+}
+
+.accessability-test h2{
+    text-align: center;
+}
+
+@media (max-width: 855px) {
+    .accessability-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* End of the accessability page */
 
 /* end */
 
