@@ -121,9 +121,111 @@ li a:hover {
     flex-direction: column;
 }
 
+.messi{
+    display: flex;
+    flex-direction: row;
+
+}
+
+#about-us-image{
+    margin-left: 80px;
+    margin-top: 50px;
+    border-radius: 12px;
+}
+
+#about-us-text{
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+#menu-image{
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-right: 30px;
+    border-radius: 12px;
+}
+#menu-text{
+    margin-left: 80px;
+    margin-top: 50px;
+}
+#menu-button {
+    background-color:black; 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+ }
+
+ #menu-button:hover {
+    background-color: rgb(1, 207, 133);
+    color: white;
+  }
+
+#booking-image{
+    margin-left: 80px;
+    margin-top: 50px;
+    border-radius: 12px;
+}
+#booking-text{
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+#booking-button {
+    background-color:black; 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+
+}
+
+#booking-button:hover {
+    background-color: rgb(1, 207, 133);
+    color: white;
+  }
+
+.paragraph{
+    font-size: 30px;
+    font-family: Andale Mono, monospace;
+}
+
+.header{
+    font-size: 40px;
+    font-family: Andale Mono, monospace;
+}
+
+button{
+    text-decoration: none;
+
+}
 
 
+a{
+    text-decoration: none;
+}
 
+@media (max-width: 855px) {
+    .messi {
+        flex-direction: column;
+    }
+}
 /* Footer content */
 
 .footer-grid {
