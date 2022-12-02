@@ -123,6 +123,7 @@ li a:hover {
     grid-column-end: -1;
     font-size: 35px;
     text-align: center;
+    margin-top: -20px;
 }
 
 .line-menu{
@@ -130,18 +131,17 @@ li a:hover {
     height: 3px;
     background: #5CDB95;
     margin: auto;
+    margin-top: -20px;
 }
 
 .menu-container{
     display: grid;
     padding: 2em;
     grid-gap: 3em;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    
-    
+    grid-template-columns: 1fr 1fr 1fr 1fr;   
 }
 
-@media (max-width: 855px) {
+@media (max-width: 1140px) {
     .menu-container{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -153,8 +153,8 @@ li a:hover {
 }
 
 .menu-img{
-    width: 75%;
-    margin:  15px  50px  ;
+    width: 80%;
+    margin:  15px  25%  ;
     border-radius: 25px;   
     box-shadow: 5px 5px 10px 1px grey;
 }
@@ -166,43 +166,38 @@ li a:hover {
 }
 
 .food-price{
-    font-size: 21px; 
+    font-size: 100%; 
 }
 
 .under-title{
     grid-column: 1 / -1;
     font-size: 30px;
-    margin:  -30px 55px  ;
-    text-align: start;
+    margin:  0 6%  ;
+    
+   
+    
 }
 /* End of the menu content */
 
 
 /* Start of the accessability page */
 
-.accessability-container{
-    display: grid;
-    padding: 2em;
-    grid-gap:3em;
-    grid-template-columns: 1fr 1fr;
-}
-.accessability-title{
-    grid-column-start: 1;
-    grid-column-end: -1;
-    font-size: 30px;
-    text-align: center;
-}
-.accessability-title h3{
-    font-size: 20px;
-    text-align: center;
+.accessability-content .row .text {
+    width: 50%;
+    float: left;
 }
 
-.accessability-text h2{
-    text-align: center;
+.accessability-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
 }
 
-.accessability-test h2{
-    text-align: center;
+.img-row img{
+    width: 250px;
+    margin: 10px;
+    float: left;
 }
 
 @media (max-width: 855px) {
