@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -19,22 +20,23 @@ header h1 {
 
 .hero-container {
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 #hero-text {
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     border-bottom-style: solid;
     border-bottom-width: 20px;
 }
 
 .hero-image {
+    margin-top: 70px;
     height: auto;
     width: 35%;
-    z-index: 2;
-    position: relative;
+    z-index: 3;
+    position: static;
 }
 
 
@@ -85,10 +87,20 @@ nav ul li a i {
 
 /* Main Content */
 
+main {
+    position: relative;
+    z-index: 3;
+}
+
 .background-gradient {
     background: #de6161; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #de6161, #2657eb); /* fallback for old browsers */
     background-image: linear-gradient(to right, #de6161 , #2657eb);
+}
+
+.background-color {
+    background-color: whitesmoke;
+    overflow: hidden;
 }
 
 /* Code from https://www.shapedivider.app/ */
@@ -113,8 +125,29 @@ nav ul li a i {
     fill: whitesmoke;
 }
 
+.wave-divider-2 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-divider-2 svg {
+    position: relative;
+    display: block;
+    width: calc(131% + 1.3px);
+    height: 72px;
+}
+
+.wave-divider-2 .shape-fill {
+    fill: whitesmoke;
+}
+
 /* Footer */
 
 footer {
     background-color: #191923;
+    overflow: hidden;
 }
