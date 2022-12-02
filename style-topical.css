@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Header/Hero image */
+header {
+    background-color: whitesmoke;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 6vw;
+    font-weight: 800;
+    color: #191923;
+}
+
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-text {
+    z-index: 1;
+    position: fixed;
+    border-bottom-style: solid;
+    border-bottom-width: 20px;
+}
+
+.hero-image {
+    height: auto;
+    width: 35%;
+    z-index: 2;
+    position: relative;
+}
+
+
+/* Navigation bar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+nav img {
+    width: 6vw;
+    height: auto;
+    filter: invert(1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 12px 20px;
+    color: #191923;
+    font-weight: 800;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: #191923;
+}
+
+nav ul li a i {
+    padding-right: 6px;
+}
+
+/* Main Content */
+
+.background-gradient {
+    background: #de6161; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #de6161, #2657eb); /* fallback for old browsers */
+    background-image: linear-gradient(to right, #de6161 , #2657eb);
+}
+
+/* Code from https://www.shapedivider.app/ */
+.wave-divider {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-divider svg {
+    position: relative;
+    display: block;
+    width: calc(136% + 1.3px);
+    height: 59px;
+}
+
+.wave-divider .shape-fill {
+    fill: whitesmoke;
+}
+
+/* Footer */
+
+footer {
+    background-color: #191923;
+}

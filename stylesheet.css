@@ -55,7 +55,7 @@ footer {
 }
 
 @media (max-width: 855px) {
-    li a {
+    nav ul li a {
         display: block;
         margin: auto;
       }
@@ -69,12 +69,33 @@ nav {
     margin: auto;
 }
 
-nav a {
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a {
     color: white;
     text-decoration: none;
     font-size: larger;
     margin: 15px;
     padding: 8px 5px;
+}
+
+nav ul li .active {
+    border-bottom-style: solid;
+}
+
+nav ul li a:hover {
+    color: rgb(179, 179, 179);
+}
+
+nav ul li a i {
+    padding-right: 6px;
 }
 
 .button {
@@ -87,28 +108,6 @@ nav a {
 .active {
     color: #5CDB95;
 }
-
-i {
-    padding-right: 6px;
-}
-
-nav ul{
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li{
-    display: inline;
-}
-
-nav ul li .active {
-    padding-bottom: value;
-    border-bottom-style: solid;
-}
-
-li a:hover {
-    color: rgb(179, 179, 179);
-  }
 
 /* Main content */
 
@@ -126,14 +125,15 @@ li a:hover {
 .footer-grid a {
     text-decoration: none;
     color: white;
+    font-size: 0.8vw;
+    display: flex;
+}
+
+.footer-grid a:hover {
+    color:#5CDB95;
 }
 
 /*Logo and social media center*/
-
-.footer-social-section img {
-    max-width: 7vw;
-    height: auto;
-}
 
 .footer-social-section {
     display: flex;
@@ -145,6 +145,11 @@ li a:hover {
     text-decoration: none;
 }
 
+.footer-social-section img {
+    max-width: 7vw;
+    height: auto;
+}
+
 .social-media-button button{
     border: none;
     cursor: pointer;
@@ -154,6 +159,9 @@ li a:hover {
     margin-top: 10px;
 }
 
+.footer-social-section button:hover {
+    color: white;
+} 
 /* Background color opacity */
 
 #black-background {
