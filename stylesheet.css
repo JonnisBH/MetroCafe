@@ -143,15 +143,7 @@ h1 {
     padding: 1em;
 }
 
-.booking-form{
-    padding: 40px;
-    margin: 0 auto ;
-    display: grid;
-    grid-row-gap: 20px;
-    background-color: black;
-    color: #5CDB95;
-    border-radius: 15px;
-}
+/* Booking content */
 
 .container-booking {
     padding: 40px;
@@ -160,19 +152,12 @@ h1 {
     font-size: 22px;
 }
 
-
-.reservation-box {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content:space-between;
-    color: white;
-}
-
 .section-information {
     text-align: center;
     font-size: 22px;
     background-color: whitesmoke;
-    outline-color:black;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .line-booking{
@@ -190,10 +175,27 @@ h1 {
     box-shadow: 10px 10px 15px gray;
 }
 
+.booking-form{
+    padding: 40px;
+    margin: 0 auto ;
+    display: grid;
+    grid-row-gap: 20px;
+    background-color: #1B1212;
+    color: #5CDB95;
+    border-radius: 15px;
+}
+
+.reservation-box {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content:space-between;
+    color: white;
+}
+
 .booking-button {
     background-color: #5CDB95;
     color: white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 15px;
     width: 200px;
     font-size: 20px;
@@ -205,10 +207,10 @@ h1 {
 }
 
 .booking-button-placement {
-    text-align: center;
+    margin: 0 auto;
 }
 
-
+/* End of the booking content */
 
 /* Menu content */
 
