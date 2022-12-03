@@ -127,6 +127,37 @@ li a:hover {
 
 }
 
+
+.underline-about-us{
+    width: 250px;
+    height: 3px;
+    background: #5CDB95;
+    margin: 0 auto;
+    margin-top: -20px;
+    margin-left: -10px;
+
+}
+
+.underline-menu{
+    width: 200px;
+    height: 3px;
+    background: #5CDB95;
+    margin: 0 auto;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
+
+
+.underline-booking{
+    width: 230px;
+    height: 3px;
+    background: #5CDB95;
+    margin: 0 auto;
+    margin-top: -20px;
+    margin-left: -10px;
+}
+
 #about-us-image{
     margin-left: 80px;
     margin-top: 50px;
