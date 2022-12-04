@@ -114,6 +114,9 @@ li a:hover {
 
 /* Praneeth */
 
+
+
+/* this is everything else that isn't the nav bar or bottom header */
 .text-box {
     
     background-color: #ffffff;;
@@ -129,7 +132,7 @@ li a:hover {
 
 }
 
-
+/* the next three classes are the turquoise lines that are under the headings*/
 .underline-about-us{
     width: 250px;
     height: 3px;
@@ -164,7 +167,6 @@ li a:hover {
     margin-left: 80px;
     margin-top: 50px;
     
-    
 }
 
 #about-us-text{
@@ -184,7 +186,9 @@ li a:hover {
     margin-left: 80px;
     margin-top: 50px;
 }
-.button {
+
+/* these are the buttons, get some of it from w3schools.com (https://www.w3schools.com/css/css3_buttons.asp) */
+.content-button {
     background-color:black; 
     border: none;
     color: white;
@@ -198,15 +202,14 @@ li a:hover {
     border-radius: 12px;
     transition-duration: 0.4s;
     color:rgb(1, 207, 133);
+    text-decoration: none;
 }
 
-.button:hover {
+.content-button:hover {
     background-color: rgb(1, 207, 133);
     color: red;
 }
-.button::before{
-    color: #5CDB95;
-}
+
 
 #booking-image{
     margin-left: 80px;
@@ -221,30 +224,33 @@ li a:hover {
 }
 
 
+/* class to change the text/paragraphs */
 .paragraph{
     font-size: 30px;
     font-family: Andale Mono, monospace;
 }
 
+
+/* class to change the headers*/
 .header{
     font-size: 40px;
     font-family: Andale Mono, monospace;
 }
 
-button{
-    text-decoration: none;
-
-}
-
+/* to get shadow on all images */
 .img-shadow{
     box-shadow: 10px 10px 15px grey;
 }
 
 
+/* to avoid getting a "link" line under the text on the buttons*/
 a{
     text-decoration: none;
 }
 
+
+
+/* the code for the page to look good on a smaller screen, e.g. mobile */
 @media (max-width: 855px) {
     .content {
         flex-direction: column;
