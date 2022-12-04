@@ -195,12 +195,16 @@ li a:hover {
     cursor: pointer;
     border-radius: 12px;
     transition-duration: 0.4s;
- }
+    color:rgb(1, 207, 133);
+}
 
- .button:hover {
+.button:hover {
     background-color: rgb(1, 207, 133);
-    color: white;
-  }
+    color: red;
+}
+.button::before{
+    color: #5CDB95;
+}
 
 #booking-image{
     margin-left: 80px;
