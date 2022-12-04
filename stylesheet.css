@@ -189,7 +189,7 @@ li a:hover {
 
 /* these are the buttons, get some of it from w3schools.com (https://www.w3schools.com/css/css3_buttons.asp) */
 .content-button {
-    background-color:black; 
+    background-color:rgb(1, 207, 133); 
     border: none;
     color: white;
     padding: 20px;
@@ -201,13 +201,11 @@ li a:hover {
     cursor: pointer;
     border-radius: 12px;
     transition-duration: 0.4s;
-    color:rgb(1, 207, 133);
     text-decoration: none;
 }
 
 .content-button:hover {
-    background-color: rgb(1, 207, 133);
-    color: red;
+    background-color: white;
 }
 
 
