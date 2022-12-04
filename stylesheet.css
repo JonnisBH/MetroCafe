@@ -172,37 +172,47 @@ li a:hover {
 .under-title{
     grid-column: 1 / -1;
     font-size: 30px;
-    margin:  0 6%  ;
-    
-   
-    
+    margin:  0 6%  ; 
 }
 /* End of the menu content */
 
 
 /* Start of the accessability page */
 
-.accessability-content .row .text {
-    width: 50%;
-    float: left;
+.accessability-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 40px; 
 }
 
-.accessability-content {
-    display: flex;
-    flex-wrap: wrap;
+.content{
+    text-align: center; 
+}
+
+.img-grid img{ 
     width: 100%;
-    align-items: center;
+    height: auto;
+    border-radius: 20px;
 }
 
-.img-row img{
-    width: 250px;
-    margin: 10px;
-    float: left;
+.img-grid{
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 10px;
+    margin: 0 auto;
+    
 }
+
+
 
 @media (max-width: 855px) {
     .accessability-container{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "content"
+        "img-grid"
     }
 }
 /* End of the accessability page */
