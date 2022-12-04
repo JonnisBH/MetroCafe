@@ -144,6 +144,7 @@ h1 {
 }
 
 /* Booking content */
+/*Grid layout for the information and reservation form*/
 .container-booking {
     padding: 40px;
     display: grid;
@@ -151,6 +152,7 @@ h1 {
     font-size: 22px;
 }
 
+/*Design for information part*/
 .section-information {
     text-align: center;
     background-color: whitesmoke;
@@ -159,6 +161,7 @@ h1 {
     line-height: 1.3;
 }
 
+/*Green line under headings*/
 .line-booking{
     width: 200px;
     height: 3px;
@@ -168,6 +171,7 @@ h1 {
     margin-bottom: -5px;
 }
 
+/*Styling for picture*/
 .img-booking {
     width: 70%;
     margin-top: 10px;
@@ -177,16 +181,18 @@ h1 {
     
 }
 
+/*Design and layout for the reservation part*/
 .booking-form{
     padding: 40px;
     margin: 0 auto ;
     display: grid;
     grid-row-gap: 20px;
-    background-color: #1B1212;
+    background-color: #131414;
     color: #5CDB95;
     border-radius: 15px;
 }
 
+/*Grid layout for the inputs*/
 .reservation-box {
     display: grid;
     grid-template-columns: auto auto;
@@ -194,6 +200,7 @@ h1 {
     color: white;
 }
 
+/*Design of the submit button*/
 .reservation-button {
     background-color: #5CDB95;
     color: white;
@@ -203,11 +210,13 @@ h1 {
     font-size: 20px;
 }
 
+/*Effect when you hover your cursor over the button*/
 .reservation-button:hover {
     background-color: white;
     color: black;
 }
 
+/*Makes the button go to the center*/
 .reservation-button-placement {
     margin: 0 auto;
 }
