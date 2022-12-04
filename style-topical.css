@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
+    background-color: whitesmoke;
 }
 
 @media (max-width: 900px) {
@@ -13,10 +14,15 @@ body {
     }
 }
 
-/* Header/Hero image */
-header {
-    background-color: whitesmoke;
+@media (max-width: 1097px) {
+    nav ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
 }
+
+/* Header/Hero image */
 
 header h1 {
     margin: 25px 0 0;
@@ -37,7 +43,7 @@ header h1 {
     z-index: 2;
     position: fixed;
     border-bottom-style: solid;
-    border-bottom-width: 20px;
+    border-bottom-width: 1.5vw;
 }
 
 .hero-image {
@@ -55,7 +61,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 100px;
+    margin: 30px 100px;
 }
 
 nav img {
@@ -64,15 +70,12 @@ nav img {
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
+    list-style: none;
 }
 
 nav ul li a {
@@ -85,7 +88,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: white;
+    color: #ffffff;
     background-color: #191923;
 }
 
@@ -112,7 +115,7 @@ button {
 
 button a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
 }
 
 button a:hover {
@@ -156,7 +159,9 @@ main section article h2 {
 
 .flex-main-container-2 img {
     width: 100%;
-    object-fit: cover;
+    height: 300px;
+    padding-top: 50px;
+    object-fit: contain;
 }
 
 .flex-main-container-2 button {
@@ -264,4 +269,19 @@ main section article h2 {
 footer {
     background-color: #191923;
     overflow: hidden;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+footer p {
+    text-align: center;
+    color: #ffffff;
+}
+
+footer img {
+    height: auto;
+    width: 5vw
 }
