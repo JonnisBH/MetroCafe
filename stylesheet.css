@@ -9,6 +9,10 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* Grid system */
 
 .grid-container {
@@ -367,7 +371,12 @@ a{
     color: white;
 }
 
-.footer-grid h2 {
+.footer-grid h3 {
+    color:#5CDB95;
+    font-size: larger;
+}
+
+.footer-grid h4 {
     color:#5CDB95;
     font-size: larger;
 }
