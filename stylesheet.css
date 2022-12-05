@@ -137,12 +137,29 @@ nav ul li a i {
     margin-left: 80px;
     margin-right: 30px;
     border-radius: 15px;
-    box-shadow: 10px 10px 15px grey;
 }
 
 #text-home{
     margin-left: 80px;
     margin-right: 30px;
+}
+
+/*Button that navigates you to different pages*/
+.home-button {
+    background-color: #000000;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    width: 200px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/*Effect when you hover over the button*/
+.home-button:hover {
+    background-color: #5CDB95;
+    color: white;
 }
 
 /* class to change the headers*/
@@ -203,7 +220,7 @@ a{
     margin-top: 10px;
     margin-bottom: 30px;
     border-radius: 15px;
-    box-shadow: 10px 10px 15px grey;
+    box-shadow: 15px 15px #5CDB95;
 }
 
 /*Design and layout for the reservation part*/
@@ -229,7 +246,7 @@ a{
     color: white;
 }
 
-/*Design of the submit button (Also used in Home page)*/
+/*Design of the submit button*/
 .activation-button {
     background-color: #5CDB95;
     color: white;
@@ -304,7 +321,7 @@ a{
     width: 80%;
     margin:  15px  25%  ;
     border-radius: 25px;   
-    box-shadow: 5px 5px 10px 1px grey;
+    box-shadow: 15px 15px #5CDB95;
 }
 
 .line{
