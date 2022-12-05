@@ -383,18 +383,33 @@ a{
 
 /* Start of the accessibility page */
 
-.accessibility-container{
+.grid-container-accessibility{
     display: grid;
-    grid-template-columns: 40% 60%;
-    padding: 30px 80px 0px; 
+    grid-template-columns: 50% 50%;
+    grid-gap: 40px;
+    margin-left: 130px;
+    margin-right: 170px;
+   
+}
+
+.accessibility-container{
+    margin-top: 40px;
 }
 
 .accessibility-heading{
-    text-align: start;
-    font-size: 45px;
-    font-family: 'Ultra', sans-serif;
-    background-image: linear-gradient(to right, blue, purple);
+    font-size: 40px;
 }
+
+.line-accessability{
+    width: 200px;
+    height: 3px;
+    background: #5CDB95;
+    margin: 0 auto;
+    margin-top: -20px;
+    margin-bottom: -5px;
+}
+
+
 
 .accessibility-grid-item-2 img{ 
     width: 100%;
@@ -404,9 +419,15 @@ a{
 .accessibility-grid-item-2{
     width: 80%;
     display: grid;
-    grid-template-columns: auto auto ;
+    grid-template-columns: auto auto auto auto ;
     grid-gap: 10px;
     margin: 0 auto;
+    margin-bottom: 40px;
+    grid-gap: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 10px 15px #5CDB95;
+    background-color: #131414;
 }
 
 @media (max-width: 855px) {
