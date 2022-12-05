@@ -111,6 +111,46 @@ nav ul li a i {
 
 /* Main content */
 
+/* Start of the accessability page */
+
+.accessability-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 40px; 
+}
+
+.content{
+    text-align: center; 
+}
+
+.img-grid img{ 
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.img-grid{
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 10px;
+    margin: 0 auto;
+    
+}
+
+
+
+@media (max-width: 855px) {
+    .accessability-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "content"
+        "img-grid"
+    }
+}
+/* End of the accessability page */
+
 /* Footer content */
 
 .footer-grid {
