@@ -282,6 +282,8 @@ a{
 
 
 /* Menu content */
+
+/* Menu Title */ 
 .menu-title{
     grid-column-start: 1;
     grid-column-end: -1;
@@ -290,6 +292,7 @@ a{
     margin-top: -20px;
 }
 
+/* The line under menu title */ 
 .line-menu{
     width: 100px;
     height: 3px;
@@ -298,6 +301,7 @@ a{
     margin-top: -20px;
 }
 
+/* Grid layout for menu */ 
 .menu-container{
     display: grid;
     padding: 2em;
@@ -306,17 +310,13 @@ a{
     font-size: 18px; 
 }
 
-@media (max-width: 1140px) {
-    .menu-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
+/* Text layout for the menu information */
 .menu{
     width: 100%;
     margin: 10px;
 }
 
+/* Code for the menu images */
 .menu-img{
     width: 80%;
     margin:  15px  25%  ;
@@ -324,16 +324,19 @@ a{
     box-shadow: 15px 15px #5CDB95;
 }
 
+/* Line for under the information */
 .line{
     width: 200px;
     height: 3px;
     background: #5CDB95;
 }
 
+/* Layout for the price */
 .food-price{
     font-size: 100%; 
 }
 
+/* Code for the genre of food */
 .under-title{
     grid-column: 1 / -1;
     font-size: 30px;
@@ -341,11 +344,14 @@ a{
     text-align: start;
     position: relative;
     top: 60px;
-    left: -3.5px;
-    
-    
-   
-    
+    left: -3.5px; 
+}
+
+/* Makes the content look good on other devices */
+@media (max-width: 1140px) {
+    .menu-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 /* End of the menu content */
 
