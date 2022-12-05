@@ -63,6 +63,8 @@ footer {
         display: block;
         margin: auto;
       }
+
+    
   }
 
 /* Navigation Bar */
@@ -177,10 +179,6 @@ a{
     .content {
         flex-direction: column;
     }
-
-    img{
-        width: 250px;
-    }
 }
 /* End of the home content */
 
@@ -269,7 +267,7 @@ a{
     margin: 0 auto;
 }
 /*Makes the content look good on other devices*/
-@media only screen and (max-width:855px){
+@media only screen and (max-width:980px){
     .container-booking{ 
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
