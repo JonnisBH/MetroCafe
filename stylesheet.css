@@ -63,6 +63,8 @@ footer {
         display: block;
         margin: auto;
       }
+
+    
   }
 
 /* Navigation Bar */
@@ -137,6 +139,7 @@ nav ul li a i {
     margin-left: 80px;
     margin-right: 30px;
     border-radius: 15px;
+    object-fit: contain;
 }
 
 #text-home{
@@ -176,10 +179,6 @@ a{
 @media (max-width: 855px) {
     .content {
         flex-direction: column;
-    }
-
-    img{
-        width: 250px;
     }
 }
 /* End of the home content */
@@ -269,7 +268,7 @@ a{
     margin: 0 auto;
 }
 /*Makes the content look good on other devices*/
-@media only screen and (max-width:855px){
+@media only screen and (max-width:980px){
     .container-booking{ 
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -352,6 +351,7 @@ a{
     .menu-container{
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 /* End of the menu content */
 
@@ -368,14 +368,19 @@ a{
     text-align: center; 
 }
 
+.accessibility-heading{
+    text-align: start;
+    font-size: 45px;
+    font-family: 'Ultra', sans-serif;
+}
+
 .accessibility-img-grid img{ 
     width: 100%;
     height: auto;
-   
 }
 
 .accessibility-img-grid{
-    width: 70%;
+    width: 80%;
     display: grid;
     grid-template-columns: auto auto ;
     grid-gap: 10px;
