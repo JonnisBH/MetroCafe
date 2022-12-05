@@ -357,14 +357,19 @@ a{
     text-align: center; 
 }
 
+.accessibility-heading{
+    text-align: start;
+    font-size: 45px;
+    font-family: 'Ultra', sans-serif;
+}
+
 .accessibility-img-grid img{ 
     width: 100%;
     height: auto;
-   
 }
 
 .accessibility-img-grid{
-    width: 70%;
+    width: 80%;
     display: grid;
     grid-template-columns: auto auto ;
     grid-gap: 10px;
