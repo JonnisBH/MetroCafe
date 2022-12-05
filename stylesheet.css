@@ -345,25 +345,25 @@ a{
 /* End of the menu content */
 
 
-/* Start of the accessability page */
+/* Start of the accessibility page */
 
-.accessability-container{
+.accessibility-container{
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 40px; 
 }
 
-.accessability-content{
+.accessibility-content{
     text-align: center; 
 }
 
-.accessability-img-grid img{ 
+.accessibility-img-grid img{ 
     width: 100%;
     height: auto;
    
 }
 
-.accessability-img-grid{
+.accessibility-img-grid{
     width: 70%;
     display: grid;
     grid-template-columns: auto auto ;
@@ -372,7 +372,7 @@ a{
 }
 
 @media (max-width: 855px) {
-    .accessability-container{
+    .accessibility-container{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: 
@@ -380,7 +380,7 @@ a{
         "img-grid"
     }
 }
-/* End of the accessability page */
+/* End of the accessibility page */
 
 /* Footer content */
 
