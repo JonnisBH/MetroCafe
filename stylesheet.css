@@ -361,11 +361,7 @@ a{
 .accessibility-container{
     display: grid;
     grid-template-columns: 40% 60%;
-    padding: 60px; 
-}
-
-.accessibility-content{
-    text-align: ;
+    padding: 30px 80px 0px; 
 }
 
 .accessibility-heading{
@@ -375,20 +371,12 @@ a{
     background-image: linear-gradient(to right, blue, purple);
 }
 
-.line-accessibility{
-    width: 300px;
-    height: 3px;
-    background: #5CDB95;
-    margin-top: -40;
-    margin-bottom: 20px;
-}
-
-.accessibility-img-grid img{ 
+.accessibility-grid-item-2 img{ 
     width: 100%;
     height: auto;
 }
 
-.accessibility-img-grid{
+.accessibility-grid-item-2{
     width: 80%;
     display: grid;
     grid-template-columns: auto auto ;
