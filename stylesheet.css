@@ -146,12 +146,6 @@ nav ul li a i {
     font-size: 40px; 
 }
 
-/* to get shadow on all images */
-.img-shadow{
-    box-shadow: 10px 10px 15px grey;
-}
-
-
 /* to avoid getting a "link" line under the text on the buttons*/
 a{
     text-decoration: none;
@@ -217,6 +211,10 @@ a{
     background-color: #131414;
     color: #5CDB95;
     border-radius: 15px;
+}
+
+.reservation-heading{
+    font-size: 42px;
 }
 
 /*Grid layout for the inputs*/
