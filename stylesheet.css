@@ -113,7 +113,7 @@ nav ul li a i {
 
 /* Home content */
 
-.content{
+.home-content{
     display: flex;
     flex-direction: row;
     font-size: 22px;
@@ -324,6 +324,7 @@ a{
     
 }
 /* End of the menu content */
+
 
 /* Start of the accessability page */
 
