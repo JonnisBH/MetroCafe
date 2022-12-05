@@ -126,6 +126,15 @@ nav ul li a i {
     padding: 60px;
 }
 
+.home-content-middle{
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    padding: 60px;
+    color: white;
+    background-color: #131414;
+}
+
 /*The turquoise lines that are under the headings*/
 .underline-home{
     width: 230px;
@@ -161,6 +170,22 @@ nav ul li a i {
 
 /*Effect when you hover over the button*/
 .home-button:hover {
+    background-color: #5CDB95;
+    color: white;
+}
+
+.home-button-middle {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 15px;
+    width: 200px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.home-button-middle:hover {
     background-color: #5CDB95;
     color: white;
 }
