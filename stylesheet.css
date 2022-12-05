@@ -349,8 +349,8 @@ a{
 
 .accessibility-container{
     display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 40px; 
+    grid-template-columns: 40% 60%;
+    padding: 80px; 
 }
 
 .accessibility-content{
