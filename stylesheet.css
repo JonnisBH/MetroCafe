@@ -386,10 +386,8 @@ a{
 .grid-container-accessibility{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-gap: 40px;
-    margin-left: 130px;
-    margin-right: 170px;
-   
+    grid-gap: 50px;
+    margin: 30px 180px;
 }
 
 .accessibility-container{
@@ -398,6 +396,8 @@ a{
 
 .accessibility-heading{
     font-size: 40px;
+    text-align: center;
+    grid-auto-columns: minmax(150px, auto);
 }
 
 .line-accessability{
@@ -409,7 +409,9 @@ a{
     margin-bottom: -5px;
 }
 
-
+ .accessibility-container p {
+    margin-top: 40px;
+}
 
 .accessibility-grid-item-2 img{ 
     width: 100%;
