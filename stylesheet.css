@@ -338,6 +338,11 @@ a{
     grid-column: 1 / -1;
     font-size: 30px;
     margin:  0 6%  ;
+    text-align: start;
+    position: relative;
+    top: 60px;
+    left: -3.5px;
+    
     
    
     
