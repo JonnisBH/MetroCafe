@@ -333,17 +333,17 @@ a{
     padding: 40px; 
 }
 
-.content{
+.accessability-content{
     text-align: center; 
 }
 
-.img-grid img{ 
+.accessability-img-grid img{ 
     width: 100%;
     height: auto;
     border-radius: 20px;
 }
 
-.img-grid{
+.accessability-img-grid{
     width: 70%;
     display: grid;
     grid-template-columns: auto auto ;
